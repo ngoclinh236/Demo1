@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form id="frm" action='demo2' method='post'>
+            Enter a:<input type='text' name='a'><br>
+            Enter b:<input type='text' name='b'><br>
+            Operator:
+            <select name="op" onchange="document.getElementById('frm').submit()">
+                <option value="0">All</option>
+                <option value="1">UCLN</option>
+                <option value="2">BCNN</option>
+            </select><br>
+            <input type='submit' name='cong' value='a+b'>
+            <input type='submit' name='tru' value='a-b'>
+            <input type='submit' name='nhan' value='a*b'>
+            <input type='submit' name='chia' value='a/b'>
+        </form>
+    </body>
+</html>
